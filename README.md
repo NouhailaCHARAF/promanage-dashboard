@@ -1,9 +1,11 @@
 # ProManage — Project Management Dashboard
 
-[https://img.shields.io/badge/React-18+-61DAFB?style=flat-square&logo=react&logoColor=black]
-[https://img.shields.io/badge/TypeScript-5+-3178C6?style=flat-square&logo=typescript&logoColor=white]
-[https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white]
-[https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=flat-square&logo=supabase&logoColor=white]
+<p>
+  <img src="https://img.shields.io/badge/React-18+-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-5+-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+</p>
 
 A modern, responsive **Project Management Dashboard** built with **React**, **TypeScript**, **Tailwind CSS 4**, and **Supabase**. Designed to help teams track projects, manage tasks, and organize team members from one clean interface.
 
