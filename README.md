@@ -16,7 +16,7 @@ A modern, responsive **Project Management Dashboard** built with **React**, **Ty
 
 ## Preview
 
-> Add a screenshot of your dashboard here (you can drag and drop an image directly into the GitHub README editor).
+<img width="1917" height="919" alt="image" src="https://github.com/user-attachments/assets/bbe6bdd8-a48d-42da-afb6-647da8fbc352" />
 
 ## Features
 
