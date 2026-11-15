@@ -9,7 +9,7 @@ A modern, responsive **Project Management Dashboard** built with **React**, **Ty
 
 ## Live Demo
 
-- **Live App:** [View Live Demo](YOUR_VERCEL_LINK_HERE)
+- **Live App:** [https://promanage-dashboard-4pdl.vercel.app/]
 - **Demo Credentials:**
   - **Email:** `nouhaila@promanage.com`
   - **Password:** `promanage123`
