@@ -1,75 +1,56 @@
-# React + TypeScript + Vite
+# ProManage — Project Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[https://img.shields.io/badge/React-18+-61DAFB?style=flat-square&logo=react&logoColor=black]
+[https://img.shields.io/badge/TypeScript-5+-3178C6?style=flat-square&logo=typescript&logoColor=white]
+[https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white]
+[https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=flat-square&logo=supabase&logoColor=white]
 
-Currently, two official plugins are available:
+A modern, responsive **Project Management Dashboard** built with **React**, **TypeScript**, **Tailwind CSS 4**, and **Supabase**. Designed to help teams track projects, manage tasks, and organize team members from one clean interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+- **Live App:** [View Live Demo](YOUR_VERCEL_LINK_HERE)
+- **Demo Credentials:**
+  - **Email:** `nouhaila@promanage.com`
+  - **Password:** `promanage123`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Preview
 
-## Expanding the ESLint configuration
+> Add a screenshot of your dashboard here (you can drag and drop an image directly into the GitHub README editor).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Pre-filled Demo Login & Logout**: One-click demo authentication persisted with `localStorage`.
+- **Live Overview Dashboard**: Real-time summary cards, recent projects, recent tasks, and team preview fetched in parallel using `Promise.all`.
+- **Full CRUD Operations**: Create, read, update, delete, search, and filter **Projects**, **Tasks**, and **Team Members** backed by Supabase.
+- **Interactive Header & Sidebar**: Notifications dropdown, user profile menu, and responsive mobile drawer.
+- **Profile Synchronization**: Updates in Settings immediately reflect in the Sidebar via React state management.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Frontend:** React, TypeScript, Vite
+- **Styling:** Tailwind CSS 4, Lucide React
+- **Routing:** React Router DOM
+- **Database:** Supabase (PostgreSQL)
+- **Deployment:** Vercel
 
-```
+## Project Structure
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+```text
+src/
+├── components/
+│   ├── Header.tsx
+│   ├── Sidebar.tsx
+│   ├── StatsCards.tsx
+│   ├── RecentProjects.tsx
+│   ├── RecentTasks.tsx
+│   └── TeamMembers.tsx
+├── page/
+│   ├── Dashboard.tsx
+│   ├── Login.tsx
+│   ├── Projects.tsx
+│   ├── Tasks.tsx
+│   ├── Team.tsx
+│   └── Settings.tsx
+├── supabaseClient.ts
+└── App.tsx
